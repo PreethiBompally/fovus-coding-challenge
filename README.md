@@ -1,7 +1,10 @@
 Fovus Coding Challege
 
+Pre-requisites: 
+1. Configure AWS on your local system.
+2. Install necessary packages.
+
 Steps to run:
-Pre-requisites: Configure AWS on your local system.
 1. Clone or Fork this repository.
 2. Navigate to fovus-cdk folder.
 3. Run:
