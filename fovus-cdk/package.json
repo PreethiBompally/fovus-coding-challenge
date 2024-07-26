@@ -27,6 +27,7 @@
     "@aws-cdk/aws-s3": "^1.204.0",
     "aws": "^0.0.3-2",
     "aws-cdk-lib": "2.150.0",
+    "aws-sdk": "^2.1664.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21"
   }
