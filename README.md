@@ -15,7 +15,7 @@ URL: https://main.d21ph7uqsedm7j.amplifyapp.com/
     - "npm install" to install all the node modules.
     - "cdk bootstarp"
     - "cdk deploy" to create all the AWS rescources.
-    - "npm run extract-api-url"to extract the API Gateway urls to a file.
+    - "npm run extract-api-url" to extract the API Gateway urls to a file.
 4. Navigate to fovus-react-app folder.
 5. Run:
     - "npm install" to install all the node modules.
