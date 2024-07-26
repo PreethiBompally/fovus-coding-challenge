@@ -1,10 +1,10 @@
-Fovus Coding Challege
+**Fovus Coding Challege**
 
-Pre-requisites: 
+**Pre-requisites:** 
 1. Configure AWS on your local system.
 2. Install necessary packages.
 
-Steps to run:
+**Steps to run:**
 1. Clone or Fork this repository.
 2. Navigate to fovus-cdk folder.
 3. Run:
@@ -21,9 +21,10 @@ Steps to run:
 8. Download the file and check if the text is appended.
 
 
-Project flow:
+**Project Architechture:**
+![app-flow](https://github.com/user-attachments/assets/9190f31e-502a-4c32-9b2d-2cd48c956884)
 
-AWS cdk script:
+**AWS cdk script:**
 1. Creates a S3 bucket and uploads a script file.
 2. Creates a "FovusFileStorage" DynamoDB table.
 3. Creates an IAM role with permissions to access S3 bucket, DynamoDB table and to carry EC2 instace actions and also creates profile for EC2 Instance.
@@ -41,7 +42,7 @@ AWS cdk script:
     - GeneratePSUrl: Triggers "getPreSignedUrl" lambda function.
     - DynamoDB_Api: Triggers "insertToDynamoDB" lambda function.
 
-React code:
+**React code:**
 1. Gets the 2 API Gateway urls from the text file.
 2. Initiates the GeneratePSUrl and uses the returned pre-signed url to upload the input file into S3 bucket.
 3. Initiates the DynamoDB_Api which takes care of the rest of the process.
