@@ -1,0 +1,4 @@
+{
+  "generateUrl": "https://qnodldcbdl.execute-api.us-east-2.amazonaws.com/prod/generateUrl",
+  "DynamoDBUrl": "https://25aq4a92f7.execute-api.us-east-2.amazonaws.com/prod/insert"
+}
