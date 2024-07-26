@@ -1,10 +1,14 @@
 **Fovus Coding Challege**
 
-**Pre-requisites:** 
+This project is deployed using CI/CD, therefore when any changes made to the repository deploys the application automatically in AWS Amplify.
+
+URL: https://main.d21ph7uqsedm7j.amplifyapp.com/
+
+**Pre-requisites to run on local system:** 
 1. Configure AWS on your local system.
 2. Install necessary packages.
 
-**Steps to run:**
+**Steps to run on local system:**
 1. Clone or Fork this repository.
 2. Navigate to fovus-cdk folder.
 3. Run:
