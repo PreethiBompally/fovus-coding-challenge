@@ -3,13 +3,6 @@ import { PutCommand,GetCommand,UpdateCommand,DeleteCommand } from '@aws-sdk/lib-
 import { nanoid } from 'nanoid';
 const dynamodb = new DynamoDB({});
 
-/**
- * Provide an event that contains the following keys:
- *
- *   - operation: one of 'create,' 'read,' 'update,' 'delete,' or 'echo'
- *   - payload: a JSON object containing the parameters for the table item
- *              to perform the operation on
- */
 export const handler = async (event, context) => {
    
      const operation = event.operation;

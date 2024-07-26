@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-// import path from 'path';
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -20,7 +19,6 @@ function App() {
       .then(function(text) {
         console.log('Raw text from file:', text);
 
-        // Parse the JSON content
         var urls = JSON.parse(text);
 
         setApiUrls(urls);

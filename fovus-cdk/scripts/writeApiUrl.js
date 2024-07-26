@@ -18,7 +18,7 @@ async function getApiUrl() {
 
     const currentDir = __dirname;
     const parentDir = path.resolve(path.resolve(currentDir, '..'),'..');
-    const outputDir = path.join(parentDir, 'public');
+    const outputDir = path.join(parentDir, 'fovus-react-app/public');
     const filePath = path.join(outputDir, 'api_url.txt');
 
     if (!fs.existsSync(outputDir)) {

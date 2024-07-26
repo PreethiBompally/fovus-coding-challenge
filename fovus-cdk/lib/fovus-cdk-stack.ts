@@ -291,7 +291,7 @@ export class FovusCdkStack extends cdk.Stack {
       '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
     );
     const initiateEC2Lambda = new cdk.aws_lambda.Function(this, 'initiateEC2', {
-      runtime: cdk.aws_lambda.Runtime.PYTHON_3_10,
+      runtime: cdk.aws_lambda.Runtime.NODEJS_20_X,
       handler: 'initiateEc2.handler',
       code: cdk.aws_lambda.Code.fromAsset('resources/initiateEc2'),
       timeout: cdk.Duration.seconds(300),
