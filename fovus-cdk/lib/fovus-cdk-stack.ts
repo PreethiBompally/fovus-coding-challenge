@@ -201,13 +201,13 @@ export class FovusCdkStack extends cdk.Stack {
     });
 
     const nanoidLayer = new cdk.aws_lambda.LayerVersion(this, 'nanoidLayer', {
-      compatibleRuntimes: [ cdk.aws_lambda.Runtime.NODEJS_LATEST ],
+      compatibleRuntimes: [ cdk.aws_lambda.Runtime.NODEJS_20_X ],
       compatibleArchitectures: [ cdk.aws_lambda.Architecture.X86_64 ],
       code: cdk.aws_lambda.Code.fromAsset('resources/layer/nodejs.zip')
     })
 
     const insertLambda = new cdk.aws_lambda.Function(this, 'insertToDynamoDB', {
-      runtime: cdk.aws_lambda.Runtime.NODEJS_LATEST,
+      runtime: cdk.aws_lambda.Runtime.NODEJS_20_X,
       handler: 'insert.handler',
       environment: {
         TABLE_NAME: dbTable.tableName,
