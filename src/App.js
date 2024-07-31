@@ -117,6 +117,10 @@ function App() {
 
       if(dynamoApiResponse.ok){
         alert("File uploaded successfully!");
+        setInputText("");
+        setInputFile(null);
+        setFileId('fileInput');
+        document.getElementById('fileInput').value = '';
       } else {
         throw new Error("Error calling API");
       }
